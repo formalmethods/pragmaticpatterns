@@ -17,6 +17,10 @@ private:
   std::function<void()> callback_;
 };
 
+void bar() {
+  throw std::exception();
+}
+
 void foo() {
   Defer defer([] () {
     std::cout << "Exiting" << std::endl;
@@ -28,7 +32,9 @@ void foo() {
     return;
   }
   ...
-  functionThatThrowsAnException(); // prints "Exiting"
+  if (...) {
+    bar(); // prints "Exiting"
+  }
   ...
   
   // prints "Exiting"
