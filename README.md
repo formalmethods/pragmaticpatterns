@@ -28,8 +28,7 @@ void foo() {
   
   ...
   if (...) {
-    // prints "Exiting"
-    return;
+    return; // prints "Exiting"
   }
   ...
   if (...) {
