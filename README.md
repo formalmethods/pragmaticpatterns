@@ -3,7 +3,7 @@
 ## Index
 
 1. [Defer](#defer)
-1. [Lightweight unchecked "any"](#any)
+1. [Lightweight unchecked "any"](#lightweight-unchecked-any)
 
 ## Defer
 
@@ -45,7 +45,7 @@ void foo() {
 }
 ```
 
-## Any
+## Lightweight unchecked "any"
 
 ```c++
 class MyAny
